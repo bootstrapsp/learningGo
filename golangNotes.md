@@ -15,4 +15,4 @@
 "
 
 * As long as something is untyped it can be combined with other untyped variable
-* 
+* Go is **Pass by value**
