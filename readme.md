@@ -43,3 +43,15 @@ $ git remote add learningGo https://github.com/bootstrapsp/learningGo.git
 ```git
 git push --set-upstream learningGo phase1
 ```
+
+**Pull all updates from remote branch**
+
+```git
+git fetch --all
+```
+
+**Discard all local changes and merge all updates fetched from remote branch**
+
+```git
+git reset --hard origin/development
+```
