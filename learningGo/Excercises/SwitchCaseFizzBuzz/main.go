@@ -6,12 +6,13 @@ func main() {
 
 	for i := 0; i <= 100; i++ {
 
-		if j := i % 3; j == 0 {
+		if i%3 == 0 {
 			fmt.Println("This number is multiple of 3", "Fizz")
-		}
-		if k := i % 5; k == 0 {
+		} else if i%5 == 0 {
 
-			fmt.Println("This number is multiple of 5", "sBuzz")
+			fmt.Println("This number is multiple of 5", "Buzz")
+		} else {
+			fmt.Println(i)
 		}
 
 	}

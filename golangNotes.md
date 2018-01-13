@@ -16,3 +16,18 @@
 
 * As long as something is untyped it can be combined with other untyped variable
 * Go is **Pass by value**
+
+## Control Flow
+
+* Go does inlining while reading the code from top to bottom for better performance
+* There's no while or do while loops in Go
+
+## Rune
+
+* Is a character
+* In Go Rune is alias for int32 number
+* Like 100 0001 in binary represents "A"
+* Rune represents int32
+* Rune is made of 32 0s & 1s or 4 bytes (4*8) = 32
+* UTF-8 is a 4 byte coding scheme
+* 
