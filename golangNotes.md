@@ -30,4 +30,10 @@
 * Rune represents int32
 * Rune is made of 32 0s & 1s or 4 bytes (4*8) = 32
 * UTF-8 is a 4 byte coding scheme
-* 
+
+## Types of Reference Types
+
+* Map
+* Slice: dynamica, doesn't need definition like []<dataTypes>
+* Array : non dynamic, need definition like [x]<dataType>
+* Channel
