@@ -29,6 +29,7 @@ func increamentSliceFunc() {
 
 	fmt.Println("final append", mySlice[0])
 
+	// this is another way of achieving shown above, i.e. increamenting value in the index
 	mySlice[0]++
 
 	fmt.Println("Finally", mySlice[0])
