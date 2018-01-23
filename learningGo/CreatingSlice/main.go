@@ -41,6 +41,25 @@ func sliceWithoutMake() {
 	fmt.Println("length for the student", len(student))
 }
 
+func sliceWithIntandNoMake() {
+
+	newSliceCollectorWithInt := []float64{}
+
+	var userInput float64
+	fmt.Println("value prior to the append", cap(newSliceCollectorWithInt))
+	fmt.Println("value prior to the append", len(newSliceCollectorWithInt))
+
+	fmt.Scanln(&userInput)
+	newSliceCollectorWithInt = append(newSliceCollectorWithInt, userInput)
+
+	fmt.Println("value after the append", cap(newSliceCollectorWithInt))
+	fmt.Println("value after the append", len(newSliceCollectorWithInt))
+
+	fmt.Println(newSliceCollectorWithInt)
+
+}
+
 func main() {
 	sliceWithoutMake()
+	sliceWithIntandNoMake()
 }
