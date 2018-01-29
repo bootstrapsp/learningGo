@@ -55,3 +55,9 @@ git fetch --all
 ```git
 git reset --hard origin/development
 ```
+
+**Pulling all the changes from the the remote repo**
+
+```git
+git pull
+```
