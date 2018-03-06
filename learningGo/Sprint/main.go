@@ -6,7 +6,7 @@ func main() {
 	// calling the func to accept the arguments and  printing out the return of the function to standard out
 	fmt.Println(supGreeting("Boot", "strap"))
 
-	// calling dualReturnFunc
+	// calling dualReturnFunc()
 	fmt.Println(dualReturnFunc("Bla1", "blah2"))
 }
 

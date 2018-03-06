@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	// variables are not initialized, only defined
 	var a int32
 	var b float64
 	var c bool

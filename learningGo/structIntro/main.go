@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// struct allows users to create own type, which is based of go's own type
+// struct allows users to create own type, which is based of Go's own type
 // struct is an AGGREGATE TYPE, because we agregate fields into it
 // this corresponds to states in object oriented programming
 type structIntro struct {
@@ -32,10 +32,4 @@ func main() {
 	fmt.Println(entry1.fun)
 	fmt.Println(entry1.goTime)
 	fmt.Println(entry1.my)
-}
-
-func callingAnotherStruct() {
-
-	//variableI := structIntroII{"moreFunn"}
-
 }
