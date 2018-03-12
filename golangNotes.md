@@ -37,3 +37,53 @@
 * Slice: dynamica, doesn't need definition like []<dataTypes>
 * Array : non dynamic, need definition like [x]<dataType>
 * Channel
+
+## Struct
+
+* Struct is a sequence of named elements called fields
+    * Each of which has a name and a type
+    * Field names may be specified explicitly (IdentifierList) or implicitly (AnonymousField)
+    * Within a struct, non-blank field names must be unique
+    * A field declared with a type but no explicit field name is an anonymous field, also called an embedded field or an embedding of the type in the struct. An embedded type must be specified as a type T or as a pointer to a non-interface type name *T and T itself may not be a pointer type.
+    * The unqualified type name acts as the field name
+    * It's a aggregate type, i.e. collecting bunch of other types in list of fields e.g.
+    first string
+    last string
+    age int
+
+- instead of creating a whole class just for this, a struct can be created for this
+
+## Go is an Object Oriented programming language
+
+* Encapsulation
+    * state ("fields")
+    * behaviour ("method")
+    * exported / un-exported
+
+* Reusability
+    * inheritence ("embedded types")
+
+* Polymorphism
+    * interfaces
+
+* Overriding
+    * Promotion
+
+## Variadic function
+Type of Go function that takes multiple inputs using "..." , **in short** : variadic functions are the functions that can have n number of parameters of a type, this is done by putting "..." in front of the type
+
+## Go feature list
+
+### Formatting
+* *gofmt* formats the go code
+* Tabs used for the Indentation are ignored
+* No line length limit
+
+### Commenting
+* can be done either by doing /* */ or // for single line comments
+* pacakges must have comments detialing out the use case for the package
+
+## Go's Memory Model
+
+### Advice
+* Programs that modify data being simultaneously accessed by multiple goroutines must serialize such access
