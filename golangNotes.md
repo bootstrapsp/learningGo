@@ -86,4 +86,18 @@ Type of Go function that takes multiple inputs using "..." , **in short** : vari
 ## Go's Memory Model
 
 ### Advice
+
 * Programs that modify data being simultaneously accessed by multiple goroutines must serialize such access
+
+Marshal vs Unmarshal vs Encode vs Decode
+
+* Marshal and UnMarshal deals with the string or slice of byte within the application
+* Have nothing to do with the external data
+
+## UnMarshal is used for parsing the JSON data and stores the value in a pointer
+
+## Marshal encodes the data 
+
+## Encode writes the value streaming out of the application
+
+## Decode reads the value streaming into the application
