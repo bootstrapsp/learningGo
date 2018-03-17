@@ -61,3 +61,6 @@ git reset --hard origin/development
 ```git
 git pull
 ```
+
+**Following used for syncing the github's repo with Bitbucket by adding it to the remote list**
+git remote set-url learningGo  --add https://bootstrapsp@bitbucket.org/rajtheceo/learninggo.git
