@@ -103,3 +103,8 @@ Marshal vs Unmarshal vs Encode vs Decode
 * Encode writes the value streaming out of the application
 
 * Decode reads the value streaming into the application
+
+## More tips
+
+* avoid using types, e.g. var x int, best is to leave out the type that is more idiomatic
+* 
