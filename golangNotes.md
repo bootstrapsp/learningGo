@@ -70,16 +70,19 @@
     * Promotion
 
 ## Variadic function
+
 Type of Go function that takes multiple inputs using "..." , **in short** : variadic functions are the functions that can have n number of parameters of a type, this is done by putting "..." in front of the type
 
 ## Go feature list
 
 ### Formatting
+
 * *gofmt* formats the go code
 * Tabs used for the Indentation are ignored
 * No line length limit
 
 ### Commenting
+
 * can be done either by doing /* */ or // for single line comments
 * pacakges must have comments detialing out the use case for the package
 
@@ -107,4 +110,39 @@ Marshal vs Unmarshal vs Encode vs Decode
 ## More tips
 
 * avoid using types, e.g. var x int, best is to leave out the type that is more idiomatic
-* 
+
+## Method sets
+
+* Receivers in the Method are of two type
+
+    * **value receiver**
+        * Value Type
+        * Pointer Type
+    *  **Pointer receiver**
+        *  Pointer Type
+
+Another way to represent this
+
+**Receivers**       **Values**
+(t T)           T and *T
+(t *T)           *T
+
+## Wait Group
+
+* Waits for a collection of goroutines to finish
+* Main go routine calls Add to set the number of goroutines to wait for 
+* Each go routines runs and calls Done when finished
+* Wait can be used to block go routines have finished
+
+## Concurrency
+
+* Is composition of independently executing processes
+
+## Parallelism
+
+* Is the simultaneous execution of (possibly) related computation
+
+## Init()
+
+* It's the first program that executes
+* Can be used for setting very first configuration for the page
