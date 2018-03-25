@@ -67,3 +67,15 @@ git pull
 ```git
 git remote set-url learningGo  --add https://bootstrapsp@bitbucket.org/rajtheceo/learninggo.git
 ```
+
+**To merge a branch with master**
+```git
+git merge phase3
+```
+Note: this should be executed from master branch, i.e. prior to this do git checkout master to change the branch
+
+**Then push to master for final merge**
+```git
+git push --set-upstream --force learningGo master
+```
+Note: here learningGo is remote repo name
