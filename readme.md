@@ -1,81 +1,27 @@
-# ReadMe
+# Overview
 
-Collection of useful commands related to Git
+This project and repo contains my learning path towards Go language
 
-**Initialize Git repo for the first time**
+## LearningGo Repo's Wiki
 
-```git
-$   git init
-```
+(Wiki Home)[https://bitbucket.org/rajtheceo/learninggo/wiki/Home]
 
-**Add all content for tracking in the branch**
+## IDE used in this project
 
-```git
-$   git add .
-```
+Visual Studio Code
 
-**Commit with message**
+## Go version
 
-```git
-$   git commit -m "Initial Commit"
-```
+go 1.9.2 windows/amd64
 
-**Create new branch**
+## Current working branch
 
-```git
-$   git branch phase1
-```
+Phase 4
 
-**Change branch to work in differet one**
+### Minor Info
 
-```git
-$   git checkout phase1
-```
+Branches phase 1,2 & 3 are merged with *master* , and at the same time branch 1 & 2 are deleted
 
-**Add Remote branch**
+## Udemy Course followed
 
-```git
-$ git remote add learningGo https://github.com/bootstrapsp/learningGo.git
-```
-
-**Push all to the remote branch**
-
-```git
-git push --set-upstream learningGo phase1
-```
-
-**Pull all updates from remote branch**
-
-```git
-git fetch --all
-```
-
-**Discard all local changes and merge all updates fetched from remote branch**
-
-```git
-git reset --hard origin/development
-```
-
-**Pulling all the changes from the the remote repo**
-
-```git
-git pull
-```
-
-**Following used for syncing the github's repo with Bitbucket by adding it to the remote list**
-
-```git
-git remote set-url learningGo  --add https://bootstrapsp@bitbucket.org/rajtheceo/learninggo.git
-```
-
-**To merge a branch with master**
-```git
-git merge phase3
-```
-Note: this should be executed from master branch, i.e. prior to this do git checkout master to change the branch
-
-**Then push to master for final merge**
-```git
-git push --set-upstream --force learningGo master
-```
-Note: here learningGo is remote repo name
+(Learn how to program Google's Go) [https://www.udemy.com/learn-how-to-code/]
