@@ -35,6 +35,7 @@
 
 * Map
 * Slice: dynamica, doesn't need definition like []<dataTypes>
+* 
 * Array : non dynamic, need definition like [x]<dataType>
 * Channel
 
@@ -146,3 +147,7 @@ Another way to represent this
 
 * It's the first program that executes
 * Can be used for setting very first configuration for the page
+
+## Pipeline Channels
+
+* structure defining in/out for set of channels
