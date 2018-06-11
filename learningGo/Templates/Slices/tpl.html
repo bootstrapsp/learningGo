@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <ul>
+        <!-- This "." is to range over the data, here the current data is passed from the main.go in the Templates folder -->
+        {{range .}}
+        <!--This is using every row from the . used above, again using current data to print out -->
+        <li>{{.}}</li>
+        {{end}}
+    </ul>
+</body>
+
+</html>
