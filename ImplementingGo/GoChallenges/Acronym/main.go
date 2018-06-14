@@ -2,20 +2,26 @@ package main
 
 import (
 	"fmt"
-	"regexp"
 )
 
 func main() {
 	createAcronym()
-	funnyRegex()
+
 }
 
 func createAcronym() {
-	var userVal string
-	fmt.Scan(&userVal)
-	fmt.Println(len(userVal)) // printing out the length
+	userVal := "What The Fuck!"
+	fmt.Println(userVal)
+
+	fmt.Print(string(userVal[0:1])) // prints out the 1st letter in the 1st word
+
+	var myVal []string
+	myVal[100] = userVal
+	fmt.Println(myVal)
+
 }
 
+/*
 func funnyRegex() {
 	matched, err := regexp.MatchString("foo.*", "seafood")
 	fmt.Println(matched, err)
@@ -23,4 +29,6 @@ func funnyRegex() {
 	fmt.Println(matched, err)
 	matched, err = regexp.MatchString("a(b", "seafood")
 	fmt.Println(matched, err)
+
 }
+*/
